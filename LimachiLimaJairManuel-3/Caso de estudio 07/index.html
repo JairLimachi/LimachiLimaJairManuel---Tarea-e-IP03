@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <section class="formulario">
+        <form method="POST">
+            <div class="verde">Regístrate</div>
+            
+            <div class="entrada">
+                <input type="text" placeholder="Nombre y apellido" name="nombre" id="nombre" required>
+            </div>
+
+            <div class="entrada">
+                <input type="email" placeholder="Correo electrónico" name="correo" id="correo" required>
+            </div>
+
+            <div class="entrada">
+                <input type="password" placeholder="Contraseña" name="clave" id="clave" required>
+            </div>
+
+            <div class="entrada">
+                <input type="password" placeholder="Repite tu contraseña" name="repetirclave" id="repetirclave" required>
+            </div>
+
+            <div style="margin: 15px 0px; text-align: left;">
+                <input type="checkbox" id="terminos" required>
+                <label for="terminos">Acepto las condiciones de uso y política de privacidad</label>
+            </div>
+
+            <p>¿Ya tienes una cuenta? <a class="login" href="#">Iniciar sesión</a></p>
+
+            <button type="button" class="btn-grabar" id="btnEnviar">Enviar</button>
+            
+            <!-- Aquí es donde JavaScript mostrará si se registró con éxito -->
+            <div id="mensaje" style="text-align: center; margin-top: 15px; font-weight: bold; color: #1a2537;"></div>
+        </form>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

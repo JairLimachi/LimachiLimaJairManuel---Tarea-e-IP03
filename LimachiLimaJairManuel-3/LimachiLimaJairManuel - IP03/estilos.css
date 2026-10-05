@@ -1,0 +1,89 @@
+/* REGLA: Color de fondo del sitio web */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Caja principal de la calculadora */
+.calculadora {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    width: 280px;
+}
+
+/* Pantalla de visualización */
+#pantalla {
+    width: 100%;
+    height: 55px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 26px;
+    text-align: right;
+    padding-right: 12px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Distribución exacta en 4 columnas */
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Botones en general */
+button {
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #fafafa;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Color para los operadores (+, -, *, /) */
+.operador {
+    background-color: #f1f3f4;
+    border-color: #dadce0;
+}
+
+/* Color para el botón C de borrado */
+#limpiar {
+    background-color: #fce8e6;
+    color: #c5221f;
+    border-color: #fad2cf;
+}
+
+#limpiar:hover {
+    background-color: #fad2cf;
+}
+
+/* Color para el botón de igual (=) */
+#igual {
+    background-color: #e6f4ea;
+    color: #137333;
+    border-color: #ceead6;
+}
+
+#igual:hover {
+    background-color: #ceead6;
+}

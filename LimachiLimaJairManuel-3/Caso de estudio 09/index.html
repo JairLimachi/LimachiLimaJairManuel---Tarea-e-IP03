@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menú -->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Productos</a>
+        <a href="#">Contáctanos</a>
+        <a href="#" id="loginLink">Login</a>
+    </nav>
+
+    <div id="theme-toggle">
+        <button id="toggle-theme-btn">Cambiar Tema</button>
+    </div>
+    
+    <div id="task-manager">
+        <h1>Administrador de Tareas</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Ingresar nueva tarea" required>
+            <button type="submit">Agregar Tarea</button>
+        </form>
+        <ul id="task-list">
+        </ul>
+    </div>
+
+    <!-- Modal Login -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h3>Iniciar Sesión</h3>
+            <input type="text" id="username" placeholder="Usuario">
+            <input type="password" id="password" placeholder="Contraseña">
+            <button id="loginBtn">Ingresar</button>
+            <div class="message" id="loginMessage"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

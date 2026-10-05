@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- REGLA: Título de la pestaña con tus datos -->
+    <title>Limachi Lima Jair Manuel</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="calculadora">
+        <!-- Pantalla donde se visualizan las operaciones -->
+        <input type="text" id="pantalla" readonly value="0">
+        
+        <!-- Botonera distribuida idéntica a la imagen de SENATI -->
+        <div class="botones">
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador">+</button>
+
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador">-</button>
+
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador">*</button>
+
+            <button class="numero">0</button>
+            <button id="limpiar" class="especial">C</button>
+            <button id="igual" class="especial">=</button>
+            <button class="operador">/</button>
+        </div>
+    </div>
+
+    <!-- CONEXIÓN CORREGIDA: Llama al archivo de lógica -->
+    <script src="script.js"></script>
+</body>
+</html>
